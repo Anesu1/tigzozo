@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
+/* eslint-disable no-undef */
 import React,{useState} from 'react';
 import styled from 'styled-components';
 import Lightbox from "react-image-lightbox";
@@ -5,10 +7,12 @@ import "react-image-lightbox/style.css";
 
 const Wrapper = styled.section`
 padding:0 5% 5%;
-
+    .popup-btn{
+margin-bottom:10px;
+    }
     img{
         width:100%;
-        margin-bottom:20px;
+        
         object-fit:contain;
     }
     .one{
@@ -50,27 +54,81 @@ padding:0 5% 5%;
 `
 
 function GallerySection({galleryOne, galleryTwo, galleryThree, galleryFour, galleryFive}) {
-    const [saIndex,setSaIndex] = useState(0);
-    const [saOpen,setSaOpen] = useState(false);
+    const [galleryIndex,setGalleryIndex] = useState(0);
+    const [galleryOpen,setGalleryOpen] = useState(false);
 
     const galleryList = [
-        galleryOne,
-        galleryTwo,
-        galleryThree,
-        galleryFour,
-        galleryFive
+        `./images/${galleryOne}`,
+        `./images/${galleryTwo}`,
+        `./images/${galleryThree}`,
+        `./images/${galleryFour}`,
+        `./images/${galleryFive}`
       ]
   return (
     <Wrapper>
         <div className="column">
-            <img src={`./images/${galleryOne}`} alt="" />
-            <img src={`./images/${galleryTwo}`} alt="" />
+        <div
+                    className="popup-btn"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setGalleryOpen(true);
+                      setGalleryIndex(0)
+                    }}
+                  >
+            <img src={`./images/${galleryOne}`} alt="" /></div>
+            <div
+                    className="popup-btn"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setGalleryOpen(true);
+                      setGalleryIndex(1)
+                    }}
+                  ><img src={`./images/${galleryTwo}`} alt="" /></div>
         </div>
-        <img className='one-img' src={`./images/${galleryThree}`} alt="" />
+        <div
+                    className="popup-btn one-img"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setGalleryOpen(true);
+                      setGalleryIndex(2)
+                    }}
+                  ><img  src={`./images/${galleryThree}`} alt="" /></div>
         <div className="column one">
-            <img src={`./images/${galleryFour}`} alt="" />
-            <img src={`./images/${galleryFive}`} alt="" />
+        <div
+                    className="popup-btn"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setGalleryOpen(true);
+                      setGalleryIndex(3)
+                    }}
+                  ><img src={`./images/${galleryFour}`} alt="" /></div>
+            <div
+                    className="popup-btn"
+                    onClick={(e) => {
+                      e.preventDefault();
+                      setGalleryOpen(true);
+                      setGalleryIndex(4)
+                    }}
+                  ><img src={`./images/${galleryFive}`} alt="" /></div>
         </div>
+        {galleryOpen && (
+              <Lightbox
+                mainSrc={galleryList[galleryIndex]}
+                nextSrc={galleryList[(galleryIndex + 1) % galleryList.length]}
+                prevSrc={
+                    galleryList[(galleryIndex + galleryList.length - 1) % galleryList.length]
+                }
+                onCloseRequest={() => setGalleryOpen(false)}
+                onMovePrevRequest={() =>
+                  setGalleryIndex(
+                    (galleryIndex + galleryList.length - 1) % galleryList.length
+                  )
+                }
+                onMoveNextRequest={() =>
+                  setGalleryIndex((galleryIndex + 1) % galleryList.length)
+                }
+              />
+            )}
     </Wrapper>
   )
 }

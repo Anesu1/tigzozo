@@ -199,15 +199,15 @@ function Services() {
           <TabList className="header">
             <Tab item="tab-1" className="tab-header">
               <h3>Media</h3>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+              <p>We take photographs and record news, current events and lifestyle stories.</p>
             </Tab>
             <Tab item="tab-2" className="tab-header">
               <h3>Digital</h3>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+              <p>We use digital cameras to take pictures and edit them on the computer</p>
             </Tab>
             <Tab item="tab-3" className="tab-header">
               <h3>Events</h3>
-              <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+              <p>We specialise in taking pictures for specific gatherings</p>
             </Tab>
           </TabList>
           <div className="panel">
