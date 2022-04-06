@@ -18,7 +18,7 @@ const Wrapper = styled.section`
     max-wwidth: 400px;
     margin: 0 auto;
     @media (min-width: 768px) {
-      width: 45%;
+      width: 35%;
       margin-right:0;
     }
   }

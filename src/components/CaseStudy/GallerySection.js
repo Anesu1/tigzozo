@@ -1,5 +1,7 @@
-import React from 'react';
+import React,{useState} from 'react';
 import styled from 'styled-components';
+import Lightbox from "react-image-lightbox";
+import "react-image-lightbox/style.css";
 
 const Wrapper = styled.section`
 padding:0 5% 5%;
@@ -48,6 +50,16 @@ padding:0 5% 5%;
 `
 
 function GallerySection({galleryOne, galleryTwo, galleryThree, galleryFour, galleryFive}) {
+    const [saIndex,setSaIndex] = useState(0);
+    const [saOpen,setSaOpen] = useState(false);
+
+    const galleryList = [
+        galleryOne,
+        galleryTwo,
+        galleryThree,
+        galleryFour,
+        galleryFive
+      ]
   return (
     <Wrapper>
         <div className="column">
