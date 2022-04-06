@@ -56,7 +56,7 @@ function Footer() {
   return (
     <Wrapper>
         <div className="footer-inner">
-            <img src="./images/logo.png" alt="Tigzozo Logo" />
+            <img src="./images/logotop.png" alt="Tigzozo Logo" />
             <Paragraph>Creating digital innovation and inspiration for our clients.</Paragraph>
             </div>
         <div className="inner">
@@ -65,13 +65,15 @@ function Footer() {
                 <>
                     <Link to="/" transition="scale">Home</Link>
                     <Link to="/about" transition="scale">About Us</Link>
-                    <Link to="/portfolio" transition="scale">Portfolio</Link>
+                    <Link to="/photography" transition="scale">Photography</Link>
+                    <Link to="/videography" transition="scale">Videography</Link>
                 </>
                 </div>
             <div className="links">
                 <h3>Social Links</h3>
-                    <a href="#">Instagram</a>
-                    <a href="#">Facebook</a>
+                    <a href="https://instagram.com/tigzozo_media?utm_medium=copy_link">Instagram</a>
+                    <a href="https://www.facebook.com/tigzozomedia">Facebook</a>
+                    <a href="https://www.linkedin.com/in/tigzozo-media-b0a411234">LinkedIn</a>
                 </div>
             </div>
     </Wrapper>

@@ -19,6 +19,7 @@ const Wrapper = styled.section`
     margin: 0 auto;
     @media (min-width: 768px) {
       width: 45%;
+      margin-right:0;
     }
   }
   .heading {
@@ -39,12 +40,12 @@ function AboutUs() {
   return (
     <Wrapper>
       <div className="inner">
-        <div className="heading">
-          <BigHeader>About Us</BigHeader>
-          <Heading>
-            Through the <span>lens.</span>{" "}
-          </Heading>
-        </div>
+          <div className="heading">
+            <BigHeader>About Us</BigHeader>
+            <Heading>
+              Through the <span>lens.</span>{" "}
+            </Heading>
+          </div>
 
         <Paragraph>
           We’re a dedicated team of digital and media creators,

@@ -291,7 +291,7 @@ function OurPortfolio() {
   }, []);
 
   return (
-    <Wrapper>
+    <Wrapper id="projects">
       <div className="heading">
         <BigHeader>Portfolio</BigHeader>
         <Heading>
@@ -300,67 +300,58 @@ function OurPortfolio() {
       </div>
 <div className="container">
    <div className="mass one">
-        <div className="text" ref={text}>
-          <h5>Media</h5>
-          <h3>Mass Drug Administration</h3>
+   <div className="text">
+          <h3>The Rise Of Shinga</h3>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos{" "}
+          The documentary on the deployment of dogs for Wildlife Shinga to the Imire: Rhino and Wildlife Conservancy in Zimbabwe…
           </Paragraph>
           <Button 
           iconcolor="#F24D2D"
           textcolor="#000000"
           borderColor="#000000"
-          link="/about"
+          link="/riseofshinga"
           text="Learn More"
           />
         </div>
-        <img src="./images/one.png" className="hty" alt="" ref={mass} data-speed="0.35" />
+        <img src="./images/shinga.png" data-speed="0.35" className="htyyy" alt="" ref={three} />
       </div>
       <div className="mass two"> 
       <img src="./images/two.png" alt="" className="htyy" ref={two}  data-speed="0.35" />
         <div className="text" ref={text}>
-          <h5>Digital</h5>
           <h3>Uncommon Stories</h3>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos{" "}
+          Uncommon.org is a non-profit technology company whose mission is to empower low-income community members with …
           </Paragraph>
           <Button 
           iconcolor="#F24D2D"
           textcolor="#000000"
           borderColor="#000000"
-          link="/about"
+          link="/uncommon"
           text="Learn More"
           />
         </div>
        
       </div>
       <div className="mass three">
-        <div className="text">
-          <h5>Events</h5>
-          <h3>Ngonie @40</h3>
+      <div className="text" ref={text}>
+          <h3>Mass Drug Administration</h3>
           <Paragraph>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
-            erat, sed diam voluptua. At vero eos{" "}
+          Documenting a Mass Drug Administration in 2020 on behalf of the World Health Organization. The documentary has also won 2 International Awards….
           </Paragraph>
           <Button 
           iconcolor="#F24D2D"
           textcolor="#000000"
           borderColor="#000000"
-          link="/about"
+          link="/who"
           text="Learn More"
           />
         </div>
-        <img src="./images/three.png" data-speed="0.35" className="htyyy" alt="" ref={three} />
+        <img src="./images/one.png" className="hty" alt="" ref={mass} data-speed="0.35" />
+     
       </div>
 </div>
      
 
-     
     </Wrapper>
   );
 }

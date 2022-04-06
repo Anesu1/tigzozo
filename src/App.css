@@ -11,14 +11,14 @@
   width: 8px;
 }
 #root::-webkit-scrollbar-thumb {
-  background: #ff9c44;
+  background: #F24D2D;
   border-radius: 6px;
 }
 body::-webkit-scrollbar {
   width: 8px;
 }
 body::-webkit-scrollbar-thumb {
-  background: #ff9c44;
+  background: #F24D2D;
   border-radius: 6px;
 }
 .menu{

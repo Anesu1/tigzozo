@@ -1,10 +1,11 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable jsx-a11y/anchor-has-content */
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import styled from 'styled-components'
 import {BsPlayFill} from 'react-icons/bs';
 import {BsInstagram} from 'react-icons/bs';
-import {FaFacebookF} from 'react-icons/fa'
+import {FaFacebookF, FaLinkedin} from 'react-icons/fa'
 
 const BannerWrapper = styled.section`
     height:100vh;
@@ -15,14 +16,13 @@ const BannerWrapper = styled.section`
     justify-content:center;
     background-size:cover;
     position:relative;
-    background-position:-100px;
+    background-position:-350px 0px;
     @media(min-width:568px){
       background-position:unset;
       
     }
     @media(min-width:768px){
       height:660px;
-      justify-content:flex-start;
       
     }
     @media(min-width:1200px){
@@ -34,12 +34,13 @@ const BannerWrapper = styled.section`
         font-size:50px;
         color:#ffffff;
         @media(min-width:768px){
-          padding-left:20%;
+        
           font-size:80px;
         }
         @media(min-width:992px){
           font-size:100px;
         }
+       
         span{
           color:${props => props.theme.color.orange};
         }
@@ -56,7 +57,7 @@ const BannerWrapper = styled.section`
       justify-content:center;
       bottom:5%;
       transform: scale(1);
-      animation: pulse-white 2s infinite;
+      /* animation: pulse-white 2s infinite; */
       @media(min-width:768px){
           left:9%;
         }
@@ -92,7 +93,7 @@ const BannerWrapper = styled.section`
         }
       }
     }
-    @keyframes pulse-white {
+    /* @keyframes pulse-white {
   0% {
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
@@ -107,7 +108,7 @@ const BannerWrapper = styled.section`
     transform: scale(0.95);
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
   }
-}
+} */
 
 `
 
@@ -115,12 +116,11 @@ function Banner({children, bgImage}) {
   return (
     <BannerWrapper bgImage={bgImage}>
         <h1>{children}</h1>
-        <div className="video">
-          <BsPlayFill />
-          </div>
+      
           <div className="links">
-            <a href="#"><BsInstagram /></a>
-            <a href="#"><FaFacebookF /></a>
+            <a href="https://instagram.com/tigzozo_media?utm_medium=copy_link"><BsInstagram /></a>
+            <a href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Ftigzozomedia"><FaFacebookF /></a>
+            <a href="https://www.linkedin.com/in/tigzozo-media-b0a411234"><FaLinkedin /></a>
             
             </div>
     </BannerWrapper>

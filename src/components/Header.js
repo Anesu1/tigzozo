@@ -84,7 +84,7 @@ function Header() {
     <div className="auto">
       <Wrapper>
         <Link to="/" transition="scale">
-          <img src="./images/logo.png" alt="Tigzozo logo" />
+          <img src="./images/logotop.png" alt="Tigzozo logo" />
         </Link>
         <div
           className={open ? "hamburger change" : "hamburger"}
@@ -101,18 +101,18 @@ function Header() {
           <NavLink to="/about" activeClassName="active"   onClick={() => setOpen(false)}>
             About us
           </NavLink>
-          <NavLink to="/portfolio" activeClassName="active"   onClick={() => setOpen(false)}>
+          {/* <NavLink to="/portfolio" activeClassName="active"   onClick={() => setOpen(false)}>
             Portfolio
-          </NavLink>
+          </NavLink> */}
           <NavLink to="/photography" activeClassName="active"   onClick={() => setOpen(false)}>
             Photography
           </NavLink>
           <NavLink to="/videography" activeClassName="active"   onClick={() => setOpen(false)}>
             Videography
           </NavLink>
-          <NavLink to="/videography" activeClassName="active"   onClick={() => setOpen(false)}>
+          {/* <NavLink to="/uncommon" activeClassName="active"   onClick={() => setOpen(false)}>
             Contact us
-          </NavLink>
+          </NavLink> */}
           
         </div>
     </div>

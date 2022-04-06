@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import React, { useState } from "react";
 import styled from "styled-components";
 import { ThemeProvider } from "@zendeskgarden/react-theming";
@@ -5,6 +6,8 @@ import { Tabs, TabList, Tab, TabPanel } from "@zendeskgarden/react-tabs";
 import BigHeader from "../../styled/BigHeader";
 import Heading from "../../styled/Heading";
 import Button from "../../styled/Button";
+import {HiOutlineChevronRight} from 'react-icons/hi'
+import { Link, animateScroll as scroll } from "react-scroll";
 
 const Wrapper = styled.section`
   background: #000000;
@@ -149,6 +152,34 @@ const Wrapper = styled.section`
   }
 `;
 
+const Wrapperlink = styled.button`
+  margin-top:30px;
+  border:none;
+  background:none;
+  color:${props => props.textcolor};
+  display:flex;
+  cursor:pointer;
+  align-items:center;
+  text-decoration:none;
+  font-size:15px;
+  font-family:${props => props.theme.fam.rsemibold};
+  span{
+    border:4px solid ${props => props.borderColor};
+    height:30px;
+    color:${props => props.iconcolor};
+    width:30px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-right:5px;
+    svg{
+      height:15px;
+      width:15px;
+    }
+  }
+`
+
 function Services() {
   const [selectedTab, setSelectedTab] = useState("tab-1");
   return (
@@ -192,13 +223,25 @@ function Services() {
                 <li>- Radio Jingles</li>
                 <li>- Marketing</li>
                 <li>- Social Media Marketing</li>
-                <Button
-                  iconcolor="#F24D2D"
+                <Link
+           to="contact"
+           spy={true}
+           smooth={true}
+           activeClass="active"
+           duration={500} className="inner"
+                  
+                >
+                  <Wrapperlink iconcolor="#F24D2D"
                   textcolor="#ffffff"
                   borderColor="#ffffff"
-                  link="/about"
-                  text="Contact Us"
-                />
+                   className="button">
+            
+            <span>
+              <HiOutlineChevronRight />
+            </span>
+              Contact Us
+              </Wrapperlink>
+                </Link>
               </div>
             </TabPanel>
             <TabPanel className="panel-inner" item="tab-2">
@@ -214,13 +257,25 @@ function Services() {
                 <li>- Websites</li>
                 <li>- Apps</li>
 
-                <Button
-                  iconcolor="#F24D2D"
+                <Link
+           to="contact"
+           spy={true}
+           smooth={true}
+           activeClass="active"
+           duration={500} className="inner"
+                  
+                >
+                  <Wrapperlink iconcolor="#F24D2D"
                   textcolor="#ffffff"
                   borderColor="#ffffff"
-                  link="/about"
-                  text="Contact Us"
-                />
+                   className="button">
+            
+            <span>
+              <HiOutlineChevronRight />
+            </span>
+              Contact Us
+              </Wrapperlink>
+                </Link>
               </div>{" "}
             </TabPanel>
             <TabPanel className="panel-inner" item="tab-3">
@@ -233,13 +288,25 @@ function Services() {
                 <li>- Lighting</li>
                 <li>- Screens</li>
                 <li>- Power</li>
-                <Button
-                  iconcolor="#F24D2D"
+                <Link
+           to="contact"
+           spy={true}
+           smooth={true}
+           activeClass="active"
+           duration={500} className="inner"
+                  
+                >
+                  <Wrapperlink iconcolor="#F24D2D"
                   textcolor="#ffffff"
                   borderColor="#ffffff"
-                  link="/about"
-                  text="Contact Us"
-                />
+                   className="button">
+            
+            <span>
+              <HiOutlineChevronRight />
+            </span>
+              Contact Us
+              </Wrapperlink>
+                </Link>
               </div>
             </TabPanel>
           </div>

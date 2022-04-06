@@ -7,7 +7,7 @@ import VideoSection from '../components/VideoSection'
 function Video() {
   return (
     <div>
-         <Banner bgImage="./images/video.png">Video<span>graphy</span></Banner>
+         <Banner bgImage="./images/video.png">Video<span>graphy.</span></Banner>
          <VideoSection />
          <ContactUs />
           <Footer />

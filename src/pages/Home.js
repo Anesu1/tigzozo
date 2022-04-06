@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, {useEffect} from 'react'
 import styled from 'styled-components'
-import Banner from '../components/Banner';
+import BannerHome from '../components/BannerHome';
 import AboutUs from '../components/AboutUs';
 import OurFeaturedClients from '../components/Home/OurFeaturedClients';
 import ContactUs from '../components/ContactUs';
@@ -20,9 +20,9 @@ function Home() {
   
   return (
       <Wrapper>
-      <Banner bgImage="./images/home.png">
+      <BannerHome bgImage="./images/home.jpg">
         We <span>Shoot.</span><br />You <span>Tell.</span> 
-        </Banner>
+        </BannerHome>
         <AboutUs />
         <Services />
        
@@ -30,7 +30,7 @@ function Home() {
         <OurFeaturedClients />
 
         <ContactUs />
-        <Insta />
+        {/* <Insta /> */}
           <Footer />
       </Wrapper>
   )

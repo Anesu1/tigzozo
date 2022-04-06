@@ -13,7 +13,18 @@ const Wrapper = styled.section`
            left:50%;
            transform:translateX(-50%);
            width:max-content;
+           @media(min-width:768px){
+               top:10px;
+           }
        }
+       
+    }
+    h3{
+        font-size:45px;
+        @media(min-width:768px){
+            font-size:90px;
+
+        }
     }
     p{
         margin:20px 0 30px;
@@ -54,7 +65,7 @@ function OurFeaturedClients() {
   return (
     <Wrapper>
         <div className="heading">
-            <BigHeader>Our Featured Clients</BigHeader>
+            <BigHeader>Featured Clients</BigHeader>
             <Heading>Amazing <span>partners.</span> </Heading>
             </div>
             <Paragraph>We believe direct collaboration with our clients is essential to bringing unique and engaging experiences to life. <br /> We help our clients solve business problems, increase visibility, and achieve unexpected results.</Paragraph>

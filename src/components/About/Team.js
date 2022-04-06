@@ -1,7 +1,8 @@
+/* eslint-disable no-unused-vars */
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, FreeMode, Thumbs } from 'swiper'
+import {EffectFade, Navigation, FreeMode, Thumbs } from 'swiper'
 import styled from "styled-components";
 import {BsChevronRight} from 'react-icons/bs'
 
@@ -9,6 +10,7 @@ import {BsChevronRight} from 'react-icons/bs'
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
+import "swiper/css/effect-fade";
 import "swiper/css/thumbs";
 import "swiper/css/effect-fade";
 
@@ -68,6 +70,9 @@ const Wrapper = styled.section`
       @media(min-width:768px){
         font-size:50px;
     }
+      @media(min-width:1200px){
+        font-size:70px;
+    }
     }
     h6 {
       font-size: 25px;
@@ -102,8 +107,7 @@ const Wrapper = styled.section`
         top:70%;
     }
     &:before {
-      content:'< Prev';
-      color: #ffffff;
+      display:none;
     }
   }
   .swiper-button-next {
@@ -117,8 +121,7 @@ const Wrapper = styled.section`
         left:15%;
     }
     &:before {
-      content: "Next >";
-      color: #ffffff;
+      display:none;
     }
   }
   .bottom-swipe {
@@ -169,6 +172,15 @@ const Wrapper = styled.section`
       }
     }
   }
+.top-swiper{
+   .swiper-slide{
+    opacity:0 !important; 
+  }
+  .swiper-slide-active{
+    opacity:1 !important;
+  }
+}
+ 
   @keyframes spin {
     100% {
       transform: rotateZ(360deg);
@@ -205,15 +217,6 @@ const ourTeam = [
     imageBig: "./images/kuda-removebg-preview.png",
   },
   {
-    title: "Walter R.S. Mandizvidza",
-    name: "Walter R.S.",
-    role: "Content Developer",
-    description:
-      "'Out of the mountain of despair, a stone of hope'.",
-    imageUrl: "./images/team4.png",
-    imageBig: "./images/walter-removebg-preview.png",
-  },
-  {
     title: "Terrence D. Phiri",
     name: "Terrence",
     role: "Film Director",
@@ -239,8 +242,9 @@ function Team() {
         loop={true}
         spaceBetween={10}
         navigation={true}
+        effect={"fade"}
         thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
+        modules={[FreeMode,EffectFade, Navigation, Thumbs]}
         className="mySwiper top-swiper"
       >
         {ourTeam.map((item, i) => {

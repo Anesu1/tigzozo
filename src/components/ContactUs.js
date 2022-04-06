@@ -24,12 +24,22 @@ const Wrapper = styled.section`
     }
   }
   .heading {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
+    h2{
+      top:0;
+      margin-bottom:50px;
+    }
     h3 {
       color: #ffffff;
       opacity: 0.1;
+      font-size:46px;
       @media (min-width: 768px) {
         width: max-content;
+        font-size:80px;
+      }
+      @media(min-width:992px){
+        font-size:100px;
+        margin-bottom:20px;
       }
     }
   }
@@ -119,7 +129,7 @@ const Wrapper = styled.section`
 
 function ContactUs() {
   return (
-    <Wrapper>
+    <Wrapper id="contact">
       <div className="contact-inner">
         <div className="heading">
           <BigHeader>Get In Touch</BigHeader>
@@ -134,13 +144,14 @@ function ContactUs() {
           started.
         </Paragraph>
         <li>
-          <FaPhone /> +263 777 777 777
+          <FaPhone /> +263 77 505 1190
         </li>
         <li>
-          <BsEnvelopeFill /> admin@tigzozo.co.zw
+          <BsEnvelopeFill /> 
+tigzozomedia@gmail.com
         </li>
         <li>
-          <FaMapMarkerAlt /> 2022 New Lane St, <br />
+          <FaMapMarkerAlt /> 23 Oxford Avenue. Newlands, <br />
           Harare, <br />
           Zimbabwe
         </li>

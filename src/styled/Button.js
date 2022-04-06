@@ -13,6 +13,7 @@ const Wrapper = styled.button`
   align-items:center;
   text-decoration:none;
   font-size:15px;
+  transition:all 0.7s ease;
   font-family:${props => props.theme.fam.rsemibold};
   span{
     border:4px solid ${props => props.borderColor};
@@ -20,6 +21,7 @@ const Wrapper = styled.button`
     color:${props => props.iconcolor};
     width:30px;
     border-radius:50%;
+    transition:all 0.7s ease;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -27,6 +29,19 @@ const Wrapper = styled.button`
     svg{
       height:15px;
       width:15px;
+      transition:all 0.7s ease;
+    }
+  }
+  &:hover{
+    color:${props => props.iconcolor};
+    span{
+      
+    border:4px solid ${props => props.iconcolor};
+    height:30px;
+    color:${props => props.borderColor};
+    }
+    svg{
+      transform:scale(1.3);
     }
   }
 `
