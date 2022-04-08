@@ -28,33 +28,23 @@ function RiseOfShinga() {
         span="Client"
       >
         <Paragraph>
-          As Tigzozo media we pride ourselves on our purpose filled, compelling
-          story telling that captures the ‘humanity’ of the moment. Not only are
-          we passionate in humanitarian work but also in projects around
-          sustainability and conservation of wildlife and our natural world. 
+          IMIRE Game Park is one of the best safaris in Zimbabwe, located about
+          38km along Bridge Road (Wedza Road), from the beautiful City Centre of
+          Marondera. It is an extraordinary game park for interactions between
+          animals and people.
         </Paragraph>
         <Paragraph>
-        In light of this we were thrilled to do a documentary that amplified the
-          efforts of Imire Rhino & Wildlife Conservancy. They have been
-          contributing to the preservation of wildlife through ground-breaking
-          breeding programmes, wildlife research, and advanced anti-poaching
-          solutions including the use of trained K9 units and armoured rangers.
-          To aid in this cause Imire Conservancy received a donation of a
-          one-year-old, fully trained Belgian Malinois dog called Shinga from
-          Dogs For Wildlife. Tigzozo Media were humbled to document from the
-          arrival of ‘Shinga’ from the United Kingdom to his settling and
-          adjusting to the team and environment at the game park over a one-week
-          period. During the filming of this documentary, we gained a new
-          appreciation which we tried to also capture during filming of the
-          devasting effects the scourge of poaching is having on our wildlife
-          and the amazing collective efforts being done to stop it.
+          Imire has over 4,000 hectares (10,000 acres) of conservancy and farm
+          land in a very diverse landscape where you will find rhino, elephant,
+          lion, buffalo, leopard, giraffe, zebra, hyena, and more than ten
+          different types of antelope and more than 150 different species of
+          birdlife here.
         </Paragraph>
-        <h4>Film Production and Photography</h4>
       </BannerCase>
       <Video
-        videoId="bBYVqZUXg0o"
-        bgImagehover="riseofshinga.png"
-        bgImage="riseofshinga.png"
+        videoId="VaumEythX4U"
+        bgImagehover="shingavid.webp"
+        bgImage="shingaimage.webp"
       />
       <ThirdSection
         imageOne="shingaone.png"
@@ -62,13 +52,15 @@ function RiseOfShinga() {
         imageThree="shingathree.png"
       >
         <Paragraph>
-          Uncommon.org was looking for a way to share their story with the world
-          sharing their experiences, mission values, and different stories and
-          they reached out to our company. The organization is filled with very
-          creative, enthusiastic, and young leaders with very amazing stories
-          which the world should know about. We are excited that we got an
-          opportunity to sit in the front seat watching them grow and reach
-          greater heights as well as tell their stories in a creative way.
+          Imire Conservancy received a donation of a one-year-old, fully trained
+          Belgian Malinois dog called Shinga from Dogs For Wildlife. Tigzozo
+          Media was humbled to document the arrival of ‘Shinga’ from the United
+          Kingdom to his settling and adjusting to the team and environment at
+          the game park over a one-week period. During the filming of this
+          documentary, we gained a new appreciation which we tried to also
+          capture during filming of the devasting effects the scourge of
+          poaching is having on our wildlife and the amazing collective efforts
+          being done to stop it.
         </Paragraph>
       </ThirdSection>
       <GallerySection

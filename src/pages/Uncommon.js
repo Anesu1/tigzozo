@@ -8,16 +8,15 @@ import ContactUs from "../components/ContactUs";
 import Footer from "../components/Footer";
 import Paragraph from "../styled/Paragraph";
 import Video from "../styled/Video";
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.section`
-    .youtube-vid{
-        max-width:950px;
-        width:80%;
-        height:470px;
-        
-    }
-`
+  .youtube-vid {
+    max-width: 950px;
+    width: 80%;
+    height: 470px;
+  }
+`;
 
 function Uncommon() {
   return (
@@ -29,20 +28,12 @@ function Uncommon() {
         span="Client"
       >
         <Paragraph>
-          Uncommon.org is a non-profit organization based in Zimbabwe aimed at
-          helping young adults in low-income communities launch their careers in
-          the technology industry free of charge.
+          Uncommon.org is a non-profit organisation whose mission is to empower
+          young adults with the technology education and economic opportunities
+          they need to positively change the trajectory of their lives.
         </Paragraph>
-        <Paragraph>
-          The organization realized in the communities, young adults were ending
-          up in the streets doing nothing because they did not have funding to
-          feather their education, while there was also an overwhelming thirst
-          for technology education and a heartbreaking lack of opportunities for
-          youths and young adults in communities.
-        </Paragraph>
-        <h4>Film Production and Photography</h4>
       </BannerCase>
-      <Video videoId="bBYVqZUXg0o" bgImagehover='byo.png' bgImage="byo.png" />
+      <Video videoId="bBYVqZUXg0o" bgImagehover="byo.png" bgImage="byo.png" />
       <ThirdSection
         imageOne="uncommonone.png"
         imageTwo="uncommontwo.png"
